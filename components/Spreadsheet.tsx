@@ -25,7 +25,7 @@ interface DataRecord {
   timestamp?: string;
   action?: string;
   enrichment?: string;
-  [key: string]: any;
+  [key: string]: string | number | undefined;
 }
 
 interface ColumnConfig {
