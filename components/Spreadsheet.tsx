@@ -17,7 +17,6 @@ import {
 } from "@tanstack/react-table";
 import { Icons } from "./icons";
 import Image from "next/image";
-import { Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
