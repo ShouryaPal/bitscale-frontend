@@ -70,3 +70,21 @@ body {
         @apply bg-background text-foreground;
     }
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #dcdcdc; /* Define a consistent border */
+    border-left: 1px solid #dcdcdc; /* Explicitly define the left border */
+    border-right: 1px solid #dcdcdc; /* Explicitly define the right border */
+}
+
+thead th {
+    border-top: 1px solid #dcdcdc; /* Add top border for header row */
+    border-bottom: 1px solid #dcdcdc; /* Add bottom border for header row */
+    background-color: #f6f6f6; /* Ensure consistent background color */
+}
