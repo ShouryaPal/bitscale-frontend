@@ -27,11 +27,11 @@ interface DataRecord {
   enrichment: string;
 }
 
-interface Header {
-  id: number;
-  title: string;
-  img: string;
-}
+// interface Header {
+//   id: number;
+//   title: string;
+//   img: string;
+// }
 
 const data = {
   records: [
@@ -87,7 +87,7 @@ const data = {
 
 const Spreadsheet = () => {
   const MIN_ROWS = 20;
-  const [emptyRowsCount, setEmptyRowsCount] = useState(MIN_ROWS);
+  const [emptyRowsCount] = useState(MIN_ROWS);
 
   const handleAddColumn = () => {
     console.log("Add new column clicked");
