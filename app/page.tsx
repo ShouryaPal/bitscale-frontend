@@ -2,11 +2,12 @@ import { Input } from "@/components/ui/input";
 import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { ArrowUpDown, Columns3, Rows3 } from "lucide-react";
+import SpreadsheetGrid from "@/components/Spreadsheet";
 
 export default function Home() {
   return (
-    <>
-      <div className="h-20 py-5 px-6 flex items-center justify-between w-full">
+    <div className="flex flex-col flex-1">
+      <div className="h-20 py-5 px-6 flex items-center justify-between w-full flex-shrink-0">
         <div className="flex items-center gap-6">
           <div className="relative w-full max-w-md h-10">
             <span className="absolute inset-y-0 left-3 flex items-center text-gray-400">
@@ -37,7 +38,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <Button className="w-20 h-9 bg-gray-800 hover:bg-gray-700 rounded-lg ">
+          <Button className="w-20 h-9 bg-gray-800 hover:bg-gray-700 rounded-lg">
             <Icons.stars className="h-4 w-4" />
             <p className="text-xs font-medium">Enrich</p>
           </Button>
@@ -54,6 +55,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
+      <div className="flex-1 overflow-hidden">
+        <SpreadsheetGrid />
+      </div>
+    </div>
   );
 }
